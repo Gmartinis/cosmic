@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cosmic Raiders</title>
+</head>
+<body>
+    <div id="crt-overlay"></div>
+    <div id="glitch-overlay"></div>
+    
+    <div class="main-container">
+        <h1>Cosmic Raiders</h1>
+        <div class="game-controls-container">
+            <div id="gameContainer">
+                <canvas id="gameCanvas" width="600" height="720"></canvas>
+                <div id="startMenu">
+                    <div id="modeSelection">
+                        <button id="normalModeButton">Modo Normal</button>
+                        <button id="infinityModeButton">Modo Infinity</button>
+                    </div>
+                </div>
+                <button id="restartButton" class="hidden">Reiniciar</button>
+            </div>
+            
+            <div class="controls-container">
+                <h2>Controles 🕹️</h2>
+                <ul class="controls-list">
+                    <li>Mover para cima: <span class="key"> W  ↑ </span></li>
+                    <li>Mover para baixo: <span class="key"> S  ↓ </span></li>
+                    <li>Mover para esquerda: <span class="key"> A  ← </span></li>
+                    <li>Mover para direita: <span class="key"> D  → </span></li>
+                    <li>Atirar: <span class="key">ESPAÇO</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-controls hidden-on-desktop">
+            <div class="d-pad">
+                <button id="up" class="mobile-button">👆</button>
+                <div class="left-right">
+                    <button id="left" class="mobile-button">👈</button>
+                    <button id="right" class="mobile-button">👉</button>
+                </div>
+                <button id="down" class="mobile-button">👇</button>
+            </div>
+            <button id="shoot" class="mobile-button shoot-button">💥</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
