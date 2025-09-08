@@ -359,7 +359,7 @@ button:hover {
         flex-direction: row;
         justify-content: space-around;
         align-items: center; /* Alinha os botões no centro vertical */
-        width: 100%;
+        width: 90%;
         background: transparent; /* Remove o fundo */
     }
 
@@ -381,4 +381,5 @@ button:hover {
         height: 95%;
     }
 }
+
 
