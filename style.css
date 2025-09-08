@@ -77,6 +77,10 @@ body::before {
     animation: pulseHud 10s infinite;
 }
 
+.mobile-controls {
+    display: none;
+}
+
 @keyframes pulseHud {
     0%, 100% { opacity: 0.3; }
     50% { opacity: 0.4; }
@@ -377,3 +381,4 @@ button:hover {
         height: 95%;
     }
 }
+
